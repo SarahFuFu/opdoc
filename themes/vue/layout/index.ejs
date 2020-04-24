@@ -1,0 +1,59 @@
+<div class="sidebar">
+  <div class="sidebar-inner-index">
+    <ul class="main-menu">
+      <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+    </ul>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <img class="hero-logo" src="<%- url_for("/images/logo.png") %>" alt="vue logo">
+    </div><div class="right">
+      <h2 class="vue">Vue.js</h2>
+      <h1>
+        兴民智通<br>通用平台构建 框架
+      </h1>
+      <p>
+        <a class="button white" href="<%- url_for("/v2/guide/") %>">起步</a>
+        <a class="button gray has-icon" href="https://github.com/vuejs/vue" target="_blank" rel="noopener">
+          <%- partial('icons/github-dark') %>
+          GITLAB</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="highlights">
+  <div class="inner">
+    <div class="point">
+      <h2>完整</h2>
+      <p>完整的系统解决方案，通信、服务、API、UI、全屏监控</p>
+    </div>
+
+    <div class="point">
+      <h2>灵活</h2>
+      <p>不断繁荣的生态系统，可以在一个库和一套完整框架之间自如伸缩。</p>
+    </div>
+
+    <div class="point">
+      <h2>高效</h2>
+      <p>
+        前后端框架配套<br>
+        完整的权限系统 <br>
+        不用担心性能问题
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <p>
+    <a class="social-icon" href="https://github.com/vuejs/vue" target="_blank" rel="noopener">
+      <%- partial('icons/github') %>
+    </a>
+  </p>
+  <p>遵循 <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT 开源协议</a><br>
+  Copyright &copy; 2014-<%- new Date().getFullYear() %> Evan You</p>
+</div>
